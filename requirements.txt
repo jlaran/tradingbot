@@ -1,0 +1,9 @@
+telethon
+python-binance
+python-dotenv
+requests
+schedule
+gspread
+oauth2client
+apscheduler
+pytz
