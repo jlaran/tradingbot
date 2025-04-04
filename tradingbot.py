@@ -91,7 +91,7 @@ GOOGLE_SHEET_NAME = os.getenv("GOOGLE_SHEET_NAME")
 
 # === Google Sheets Setup ===
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-credentials = ServiceAccountCredentials.from_json_keyfile_name("telegram-signals-455719-e9ea546e10ed.json", scope)
+credentials = ServiceAccountCredentials.from_json_keyfile_name("/etc/secrets/telegram-signals-455719-e9ea546e10ed.json", scope)
 gsheets_client = gspread.authorize(credentials)
 gsheets_sheet = gsheets_client.open(GOOGLE_SHEET_NAME).sheet1
 
